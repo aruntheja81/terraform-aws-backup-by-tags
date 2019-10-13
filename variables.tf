@@ -49,3 +49,9 @@ variable "selection_by_tags" {
   type        = map
   description = "A map that defines the key/value pairs that will be used for backup resources selection"
 }
+
+variable "vault_name" {
+    type        = string
+    description = "The name of the Backup Vault that will be associated to the Backup Plan"
+    default     = "Default"
+}

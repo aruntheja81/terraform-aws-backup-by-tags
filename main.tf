@@ -3,7 +3,7 @@ resource "aws_backup_plan" "default" {
 
   rule {
     rule_name           = "${var.name}-default"
-    target_vault_name   = "Default"
+    target_vault_name   = var.vault_name
     schedule            = var.schedule
     start_window        = var.start_window
     completion_window   = var.completion_window
