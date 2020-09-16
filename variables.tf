@@ -51,7 +51,7 @@ variable "selection_by_tags" {
 }
 
 variable "vault_name" {
-    type        = string
-    description = "The name of the Backup Vault that will be associated to the Backup Plan"
-    default     = "Default"
+  type        = string
+  description = "The name of the Backup Vault that will be associated to the Backup Plan"
+  default     = "Default"
 }
