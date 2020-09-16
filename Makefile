@@ -146,9 +146,3 @@ terratest-go-test: ## Run E2E terratests
 
 terratest-go-test-bash: ## Run E2E terratests interactive bash
 	${TERRATEST_GO_CMD_BASH_PREFIX}
-
-#==============================================================#
-# CIRCLECI                                                     #
-#==============================================================#
-circleci-validate-config: ## Validate A CircleCI Config (https://circleci.com/docs/2.0/local-cli/)
-	circleci config validate .circleci/config.yml
