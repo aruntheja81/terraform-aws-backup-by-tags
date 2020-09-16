@@ -1,9 +1,9 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-waf-owasp/master/figures/binbash.png" 
+    <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-backup-by-tags/master/figures/binbash-logo.png" 
     alt="drawing" width="250"/>
 </div>
 <div align="right">
-  <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-waf-owasp/master/figures/binbash-leverage-terraform.png"
+  <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-backup-by-tags/master/figures/binbash-leverage-terraform-logo.png"
    alt="leverage" width="130"/>
 </div>
 
@@ -23,7 +23,7 @@ Terraform module to provision AWS Backup. At the moment of this modules creation
 ### CircleCi PR auto-release job
 
 <div align="left">
-  <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-waf-owasp/master/figures/circleci.png" 
+  <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-backup-by-tags/master/figures/circleci-logo.png" 
   alt="circleci" width="130"/>
 </div>
 
