@@ -1,5 +1,5 @@
 resource "aws_backup_plan" "default" {
-  name  = var.name
+  name = var.name
 
   rule {
     rule_name           = "${var.name}-default"
@@ -49,10 +49,10 @@ resource "aws_backup_selection" "default" {
 
   dynamic "selection_tag" {
     for_each = var.selection_by_tags
-      content {
-        type  = "STRINGEQUALS"
-        key   = selection_tag.key
-        value = selection_tag.value
-      }
+    content {
+      type  = "STRINGEQUALS"
+      key   = selection_tag.key
+      value = selection_tag.value
+    }
   }
 }

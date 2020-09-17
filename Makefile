@@ -17,8 +17,8 @@ LOCAL_OS_AWS_REGION   := us-east-1
 TF_PWD_DIR            := $(shell pwd)
 TF_VER                := 0.12.28
 TF_PWD_CONT_DIR       := "/go/src/project/"
-TF_DOCKER_ENTRYPOINT  := /usr/local/go/bin/terraform
-TF_DOCKER_IMAGE       := binbash/terraform-awscli
+TF_DOCKER_ENTRYPOINT  := /bin/terraform
+TF_DOCKER_IMAGE       := binbash/terraform-awscli-terratest-slim
 
 TERRATEST_DOCKER_ENTRYPOINT := dep
 TERRATEST_DOCKER_WORKDIR    := /go/src/project/tests
@@ -146,9 +146,3 @@ terratest-go-test: ## Run E2E terratests
 
 terratest-go-test-bash: ## Run E2E terratests interactive bash
 	${TERRATEST_GO_CMD_BASH_PREFIX}
-
-#==============================================================#
-# CIRCLECI                                                     #
-#==============================================================#
-circleci-validate-config: ## Validate A CircleCI Config (https://circleci.com/docs/2.0/local-cli/)
-	circleci config validate .circleci/config.yml
