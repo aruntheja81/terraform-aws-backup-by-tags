@@ -7,6 +7,14 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.3"></a>
+## [v0.1.3] - 2020-09-17
+
+- BBL-381 | adding mandayory comments at Makefile
+- BBL-381 | fixing terrafor canonical format
+- BBL-381 | Standalone makefile approach implemented and tested + README.md w/ versions.tf updated
+
+
 <a name="v0.1.2"></a>
 ## [v0.1.2] - 2020-09-17
 
@@ -38,6 +46,7 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.3...HEAD
+[v0.1.3]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/0.1.1...v0.1.2
 [0.1.1]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/0.1.0...0.1.1
