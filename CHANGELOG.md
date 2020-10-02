@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.7"></a>
+## [v0.1.7] - 2020-10-02
+
+- BBL-381 | updating makefile include sintaxt + circleci sumologic integration
+
+
 <a name="v0.1.6"></a>
 ## [v0.1.6] - 2020-09-24
 
@@ -64,7 +70,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.6...HEAD
+[Unreleased]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.7...HEAD
+[v0.1.7]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.6...v0.1.7
 [v0.1.6]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.5...v0.1.6
 [v0.1.5]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.4...v0.1.5
 [v0.1.4]: https://github.com/binbashar/terraform-aws-backup-by-tags/compare/v0.1.3...v0.1.4
