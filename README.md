@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-backup-by-tags/master/figures/binbash-logo.png" 
+    <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-backup-by-tags/master/figures/binbash-logo.png"
     alt="drawing" width="250"/>
 </div>
 <div align="right">
@@ -54,22 +54,22 @@ This module allows the use of tags to define which resources are selected for ba
 
 In order to get the full automated potential of the
 [Binbash Leverage DevOps Automation Code Library](https://leverage.binbash.com.ar/how-it-works/code-library/code-library/)  
-you should initialize all the necessary helper **Makefiles**. 
+you should initialize all the necessary helper **Makefiles**.
 
-#### How? 
+#### How?
 You must execute the `make init-makefiles` command  at the root context
 
-     
+
 ```shell
 ╭─delivery at delivery-I7567 in ~/terraform/terraform-aws-backup-by-tags on master✔ 20-09-17
 ╰─⠠⠵ make
 Available Commands:
  - init-makefiles     initialize makefiles
 
-``` 
+```
 
-### Why? 
-You'll get all the necessary commands to automatically operate this module via a dockerized approach, 
+### Why?
+You'll get all the necessary commands to automatically operate this module via a dockerized approach,
 example shown below
 
 ```shell
@@ -82,11 +82,11 @@ Available Commands:
  - tf-dir-chmod        ## run chown in ./.terraform to gran that the docker mounted dir has the right permissions
  - version             ## Show terraform version
  - init-makefiles      ## initialize makefiles
-``` 
+```
 
 ```shell
 ╭─delivery at delivery-I7567 in ~/terraform/terraform-aws-backup-by-tags on master✔ 20-09-17
-╰─⠠⠵ make format-check 
+╰─⠠⠵ make format-check
 docker run --rm -v /home/delivery/Binbash/repos/Leverage/terraform/terraform-aws-backup-by-tags:"/go/src/project/":rw -v :/config -v /common.config:/common-config/common.config -v ~/.ssh:/root/.ssh -v ~/.gitconfig:/etc/gitconfig -v ~/.aws/bb:/root/.aws/bb -e AWS_SHARED_CREDENTIALS_FILE=/root/.aws/bb/credentials -e AWS_CONFIG_FILE=/root/.aws/bb/config --entrypoint=/bin/terraform -w "/go/src/project/" -it binbash/terraform-awscli-slim:0.12.28 fmt -check
 ```
 
@@ -100,7 +100,7 @@ docker run --rm -v /home/delivery/Binbash/repos/Leverage/terraform/terraform-aws
 ### CircleCi PR auto-release job
 
 <div align="left">
-  <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-backup-by-tags/master/figures/circleci-logo.png" 
+  <img src="https://raw.githubusercontent.com/binbashar/terraform-aws-backup-by-tags/master/figures/circleci-logo.png"
   alt="circleci" width="130"/>
 </div>
 
