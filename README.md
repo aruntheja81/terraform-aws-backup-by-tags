@@ -14,6 +14,7 @@ Terraform module to provision AWS Backup. At the moment of this modules creation
 offered a similar functionality, the only difference was that they only allowed to pass specific resource IDs.
 This module allows the use of tags to define which resources are selected for backups.
 
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
@@ -31,13 +32,13 @@ This module allows the use of tags to define which resources are selected for ba
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| name | Solution name, e.g. 'app' or 'cluster' | `string` | n/a | yes |
-| selection\_by\_tags | A map that defines the key/value pairs that will be used for backup resources selection | `map` | n/a | yes |
 | cold\_storage\_after | Specifies the number of days after creation that a recovery point is moved to cold storage | `number` | `null` | no |
 | completion\_window | The amount of time AWS Backup attempts a backup before canceling the job and returning an error. Must be at least 60 minutes greater than `start_window` | `number` | `null` | no |
 | delete\_after | Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than `cold_storage_after` | `number` | `null` | no |
 | kms\_key\_arn | The server-side encryption key that is used to protect your backups | `string` | `null` | no |
+| name | Solution name, e.g. 'app' or 'cluster' | `string` | n/a | yes |
 | schedule | A CRON expression specifying when AWS Backup initiates a backup job | `string` | `null` | no |
+| selection\_by\_tags | A map that defines the key/value pairs that will be used for backup resources selection | `map` | n/a | yes |
 | start\_window | The amount of time in minutes before beginning a backup. Minimum value is 60 minutes | `number` | `null` | no |
 | tags | Additional tags (e.g. `map('BusinessUnit`,`XYZ`) | `map(string)` | `{}` | no |
 | vault\_name | The name of the Backup Vault that will be associated to the Backup Plan | `string` | `"Default"` | no |
@@ -49,6 +50,8 @@ This module allows the use of tags to define which resources are selected for ba
 | backup\_plan\_arn | Backup Plan ARN |
 | backup\_plan\_version | Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan |
 | backup\_selection\_id | Backup Selection ID |
+
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Binbash Leverage | DevOps Automation Code Library Integration
 
